@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.picole {
+    position: relative;
+    width: 150px;
+    height: 230px;
+    border-top-right-radius: 75px;
+    border-top-left-radius: 75px;
+    background: repeating-linear-gradient(
+        315deg,
+        #BAFFB4 0%,  #BAFFB4 10%,
+        #FFFDA2 10%, #FFFDA2 20%,
+        #FFAB77 20%, #FFAB77 30%,
+        #FF6464 30%, #FF6464 40%,
+        #fc3d3d 40%, #fc3d3d 50%
+
+    );
+    background-size: 200% 200% ;
+    animation: picole-animado 10s linear infinite;
+}
+
+@keyframes picole-animado {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+.palito {
+    position: absolute;
+    width: 40px;
+    height: 120px;
+    bottom: -120px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    left: 50%;
+    margin-left: -20px;
+    background: #FFCC32;
+}
